@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Righteous&display=swap');
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+  background-color: #d9d9d9;
+}
+
+/*
+HTML layout looks like:
+
+  div#filmbudd-lite-widget 
+    a 
+      span .rating-cell .rating-cell-cn|.rating-cell-im
+        span .cell-chunk .rating
+        span .cell-chunk .icon
+*/
+
+#filmbudd-lite-widget {
+  margin: 2em;
+  padding: 2px;
+  font-family: "Source Han Sans CN";
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#filmbudd-lite-widget a {
+  text-decoration: none;
+}
+
+#filmbudd-lite-widget a:hover {
+  text-decoration: none;
+}
+
+#filmbudd-lite-widget .rating-cell:first-child {
+  margin-right: 9px;
+}
+
+#filmbudd-lite-widget .rating-cell {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 72px;
+  height: 32px;
+  color: #212122;
+  background-color: rgba(255, 255, 255, 0.63);
+  backdrop-filter: blur(3px);
+  border-radius: 37px;
+}
+
+#filmbudd-lite-widget .cell-chunk {
+  width: 28px;
+  height: 28px;
+}
+
+#filmbudd-lite-widget .rating {  
+  font-family: "Source Han Sans CN", sans-serif;
+
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 28px;
+
+  margin-left: 3px;
+  margin-right: 4px;  
+}
+
+#filmbudd-lite-widget .icon {  
+  font-family: "Righteous", sans-serif;
+  
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 28px;
+
+  border-radius: 14px;
+}
+
+#filmbudd-lite-widget .rating-cell-cn .icon {
+  color: #fff;
+  background: linear-gradient(#07d714, #05ae11);
+}
+
+#filmbudd-lite-widget .rating-cell-im .icon {
+  color: #000;
+  background: linear-gradient(#ffe177, #eabd1e);
+}
