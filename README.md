@@ -1,4 +1,6 @@
-# Filmbudd Lite Widget Design
+# Filmbudd Lite Widget
+
+The filmbudd lite widget design.
 
 For local development, [pnpm](https://pnpm.io/) is preferred as package manager:
 
