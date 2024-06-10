@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Righteous&display=swap');
+
+/*
+HTML widget layout looks like:
+
+- div .filmbuddLiteWidget 
+  - a .wrapper
+    - span .ratingCell .cn
+      - span .cellChunk .rating
+      - span .cellChunk .icon
+  - a .wrapper
+    - span .ratingCell .im
+      - span .cellChunk .rating
+      - span .cellChunk .icon
+*/
+
+.filmbuddLiteWidget {
+  font-family: "Source Han Sans CN";
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin-left: 12px;  
+}
+
+.filmbuddLiteWidget a {
+  text-decoration: none;
+
+  width: 72px;
+  height: 32px;
+
+  backdrop-filter: blur(3px);
+  border-radius: 37px;
+  background-color: #d9d9d9;
+}
+
+.filmbuddLiteWidget a:hover {
+  text-decoration: none;
+  
+  background-color: rgba(217, 217, 217, 0.4);
+}
+
+.filmbuddLiteWidget a.wrapper:first-child {
+  margin-right: 6px;
+}
+
+.ratingCell:first-child {
+  margin-right: 6px;
+}
+
+.ratingCell {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 72px;
+  height: 32px;
+  color: #212122;
+  background-color: rgba(255, 255, 255, 0.63);
+  backdrop-filter: blur(3px);
+  border-radius: 37px;
+}
+
+ .cellChunk {
+  width: 28px;
+  height: 28px;
+}
+
+ .rating {  
+  font-family: "Source Han Sans CN", sans-serif;
+
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 28px;
+
+  margin-left: 3px;
+  margin-right: 4px;  
+}
+
+ .icon {  
+  font-family: "Righteous", sans-serif;
+
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 28px;
+
+  border-radius: 14px;
+}
+
+ .cn .icon {
+  color: #fff;
+  background: linear-gradient(#07d714, #05ae11);
+}
+
+ .im .icon {
+  color: #000;
+  background: linear-gradient(#ffe177, #eabd1e);
+}
