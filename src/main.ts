@@ -10,10 +10,10 @@ function main() {
     document,
     app,
     {
-      cnUrl: "https://movie.douban.com/subject/1293908/",
-      cnRating: "8.1",
-      imUrl: "https://www.imdb.com/title/tt0021749/",
-      imRating: "7.0",
+      cn_url: "https://movie.douban.com/subject/1293908/",
+      cn_rating: "8.1",
+      im_url: "https://www.imdb.com/title/tt0021749/",
+      im_rating: "7.0",
     },
     classes
   );
@@ -22,8 +22,8 @@ function main() {
     document,
     app,
     {
-      imUrl: "https://www.imdb.com/title/tt0021749/",
-      imRating: "7.0",
+      im_url: "https://www.imdb.com/title/tt0021749/",
+      im_rating: "7.0",
     },
     classes
   );
@@ -32,8 +32,8 @@ function main() {
     document,
     app,
     {
-      cnUrl: "https://movie.douban.com/subject/1293908/",
-      cnRating: "8.1",
+      cn_url: "https://movie.douban.com/subject/1293908/",
+      cn_rating: "8.1",
     },
     classes
   );
@@ -42,10 +42,10 @@ function main() {
     document,
     app,
     {
-      cnUrl: "",
-      cnRating: MidLineEllipsis,
-      imUrl: "https://www.imdb.com/title/tt0021749/",
-      imRating: "7.0",
+      cn_url: "",
+      cn_rating: MidLineEllipsis,
+      im_url: "https://www.imdb.com/title/tt0021749/",
+      im_rating: "7.0",
     },
     classes
   );
@@ -54,10 +54,10 @@ function main() {
     document,
     app,
     {
-      cnUrl: "",
-      cnRating: "9.2",
-      imUrl: "",
-      imRating: MidLineEllipsis,
+      cn_url: "",
+      cn_rating: "9.2",
+      im_url: "",
+      im_rating: MidLineEllipsis,
     },
     classes
   );
@@ -66,10 +66,10 @@ function main() {
     document,
     app,
     {
-      cnUrl: "",
-      cnRating: "2.3",
-      imUrl: "",
-      imRating: ErrorFace,
+      cn_url: "",
+      cn_rating: "2.3",
+      im_url: "",
+      im_rating: ErrorFace,
     },
     classes
   );
@@ -78,10 +78,10 @@ function main() {
     document,
     app,
     {
-      cnUrl: "",
-      cnRating: "MISS",
-      imUrl: "",
-      imRating: "---",
+      cn_url: "",
+      cn_rating: "MISS",
+      im_url: "",
+      im_rating: "---",
     },
     classes
   );
@@ -90,10 +90,10 @@ function main() {
     document,
     app,
     {
-      cnUrl: "",
-      cnRating: "缺",
-      imUrl: "",
-      imRating: "---",
+      cn_url: "",
+      cn_rating: "缺",
+      im_url: "",
+      im_rating: "---",
     },
     classes
   );
@@ -102,8 +102,8 @@ function main() {
     document,
     document.querySelector<HTMLTitleElement>("h1")!,
     {
-      imUrl: "https://www.imdb.com/title/tt0021749/",
-      imRating: "7.0",
+      im_url: "https://www.imdb.com/title/tt0021749/",
+      im_rating: "7.0",
     },
     classes
   );

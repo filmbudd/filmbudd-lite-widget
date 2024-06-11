@@ -1,8 +1,8 @@
 export interface Work {
-  cnUrl?: string;
-  cnRating?: string;
-  imUrl?: string;
-  imRating?: string;
+  cn_url?: string;
+  cn_rating?: string;
+  im_url?: string;
+  im_rating?: string;
 }
 
 export interface DataSourceRating {
@@ -26,30 +26,30 @@ export function attachWidget(
   const widget = doc.createElement("div");
   widget.classList.add(...clsWidget);
 
-  const { cnUrl: doUrl, cnRating: doRating } = workInfo;
+  const { cn_url, cn_rating } = workInfo;
   const ratingCellCN = newRatingCell(
     doc,
     "cn",
     {
-      rating: doRating!,
-      url: doUrl!,
+      rating: cn_rating!,
+      url: cn_url!,
     },
     classes
   );
 
-  const { imUrl, imRating } = workInfo;
+  const { im_url, im_rating } = workInfo;
   const ratingCellIM = newRatingCell(
     doc,
     "im",
     {
-      rating: imRating!,
-      url: imUrl!,
+      rating: im_rating!,
+      url: im_url!,
     },
     classes
   );
 
-  doRating && doRating !== "" && widget.appendChild(ratingCellCN);
-  imRating && imRating !== "" && widget.appendChild(ratingCellIM);
+  cn_rating && cn_rating !== "" && widget.appendChild(ratingCellCN);
+  im_rating && im_rating !== "" && widget.appendChild(ratingCellIM);
 
   funcAttach ? funcAttach(doc, rootNode, widget) : rootNode.appendChild(widget);
 }

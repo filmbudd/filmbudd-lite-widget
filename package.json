@@ -1,9 +1,9 @@
 {
   "name": "@filmbuddllc/filmbudd-lite-widget",
-  "version": "24.6.2",
+  "version": "24.6.3",
   "homepage": "https://github.com/filmbudd/filmbudd-lite-widget",
   "license": "MIT",
-  "author": "Filmbudd LLC <io@filmbudd.com> (https://filmbudd.com)",
+  "author": "Filmbudd LLC <support@filmbudd.com> (https://filmbudd.com)",
   "type": "module",
   "main": "dist/widget.js",
   "types": "dist/widget.d.ts",
