@@ -12,11 +12,14 @@ export interface DataSourceRating {
 
 export const cssNsPrefix = "filmbuddLite";
 
+type FuncAttach = (doc: Document, root: Node, node: Node) => void;
+
 export function attachWidget(
   doc: Document,
   rootNode: Node,
   workInfo: Work,
-  classes: CSSModule
+  classes: CSSModule,
+  funcAttach?: FuncAttach
 ) {
   const defaultClassName = cssNsPrefix + "Widget";
   const clsWidget = [defaultClassName, classes[cssNsPrefix + "Widget"]!];
@@ -47,7 +50,8 @@ export function attachWidget(
 
   doRating && doRating !== "" && widget.appendChild(ratingCellCN);
   imRating && imRating !== "" && widget.appendChild(ratingCellIM);
-  rootNode.appendChild(widget);
+
+  funcAttach ? funcAttach(doc, rootNode, widget) : rootNode.appendChild(widget);
 }
 
 function newRatingCell(

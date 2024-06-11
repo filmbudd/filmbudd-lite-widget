@@ -6,6 +6,7 @@ declare const styles: {
   readonly "im": string;
   readonly "rating": string;
   readonly "ratingCell": string;
+  readonly "wrapper": string;
 };
 export = styles;
 
